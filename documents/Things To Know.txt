@@ -1,0 +1,9 @@
+To work with Arduino Mega and GSM library the Rx pin of the serial communication in Mega is D10 and Tx is 
+D3. (The library uses pin 2 and 3 but pin 2 on Mega is not an interrupt pin which is on Uno)
+
+To work with Hyperterminal and GSM shield :
+-> open Hyperterminal
+-> choose a new connection -> select port -> Baud rate (typically 19200)Data bits 8 -> parity None -> Stop bits 1 -> Flow control None 
+-> Go to File -> properties -> settings -> ASCII setup -> Mark Send Line ends with the line feeds and Append line feeds to incoming line ends
+
+-> VIOLA !!
